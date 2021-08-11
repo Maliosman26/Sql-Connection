@@ -110,5 +110,16 @@ namespace Personel_Kayit_Projesi
                 radioButton2.Checked = true;
             }
         }
+
+        private void BtnSil_Click(object sender, EventArgs e) 
+        {
+            baglanti.Open();    // Her bir Sql cümleciğinde bağlantı açılıp kapatılmalı
+
+            SqlCommand komutsil = new SqlCommand("Delete From Tbl_Personel Where Perid=@k1", baglanti);
+            komutsil.Parameters.AddWithValue("@k1", Txtid.Text);
+            komutsil.ExecuteNonQuery();
+            MessageBox.Show("Kayıt Silindi!");
+            baglanti.Close();
+        }
     }
 }
