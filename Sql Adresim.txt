@@ -1,0 +1,1 @@
+Data Source=MALIOSMAN;Initial Catalog=PersonelVeriTabani;Integrated Security=True
