@@ -23,6 +23,9 @@ namespace Personel_Kayit_Projesi
 
         }
 
+        SqlConnection baglanti = new SqlConnection("Data Source = MALIOSMAN; Initial Catalog = PersonelVeriTabani; Integrated Security = True");
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
                      
@@ -35,7 +38,9 @@ namespace Personel_Kayit_Projesi
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
 
+            baglanti.Close();
         }
     }
 }
