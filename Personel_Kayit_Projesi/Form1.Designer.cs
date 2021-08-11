@@ -57,10 +57,6 @@ namespace Personel_Kayit_Projesi
             this.BtnSil = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.personelVeriTabaniDataSet1 = new Personel_Kayit_Projesi.PersonelVeriTabaniDataSet1();
-            this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_PersonelTableAdapter = new Personel_Kayit_Projesi.PersonelVeriTabaniDataSet1TableAdapters.Tbl_PersonelTableAdapter();
             this.peridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,14 +64,18 @@ namespace Personel_Kayit_Projesi
             this.perMaasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perDurumDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.perMeslekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personelVeriTabaniDataSet1 = new Personel_Kayit_Projesi.PersonelVeriTabaniDataSet1();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbl_PersonelTableAdapter = new Personel_Kayit_Projesi.PersonelVeriTabaniDataSet1TableAdapters.Tbl_PersonelTableAdapter();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personelVeriTabaniDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personelVeriTabaniDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -307,6 +307,7 @@ namespace Personel_Kayit_Projesi
             this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
             // 
@@ -349,30 +350,6 @@ namespace Personel_Kayit_Projesi
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(936, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 143);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // personelVeriTabaniDataSet1
-            // 
-            this.personelVeriTabaniDataSet1.DataSetName = "PersonelVeriTabaniDataSet1";
-            this.personelVeriTabaniDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblPersonelBindingSource
-            // 
-            this.tblPersonelBindingSource.DataMember = "Tbl_Personel";
-            this.tblPersonelBindingSource.DataSource = this.personelVeriTabaniDataSet1;
-            // 
-            // tbl_PersonelTableAdapter
-            // 
-            this.tbl_PersonelTableAdapter.ClearBeforeFill = true;
             // 
             // peridDataGridViewTextBoxColumn
             // 
@@ -417,6 +394,30 @@ namespace Personel_Kayit_Projesi
             this.perMeslekDataGridViewTextBoxColumn.HeaderText = "PerMeslek";
             this.perMeslekDataGridViewTextBoxColumn.Name = "perMeslekDataGridViewTextBoxColumn";
             // 
+            // tblPersonelBindingSource
+            // 
+            this.tblPersonelBindingSource.DataMember = "Tbl_Personel";
+            this.tblPersonelBindingSource.DataSource = this.personelVeriTabaniDataSet1;
+            // 
+            // personelVeriTabaniDataSet1
+            // 
+            this.personelVeriTabaniDataSet1.DataSetName = "PersonelVeriTabaniDataSet1";
+            this.personelVeriTabaniDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(936, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 143);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tbl_PersonelTableAdapter
+            // 
+            this.tbl_PersonelTableAdapter.ClearBeforeFill = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -448,9 +449,9 @@ namespace Personel_Kayit_Projesi
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personelVeriTabaniDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personelVeriTabaniDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
