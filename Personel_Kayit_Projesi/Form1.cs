@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient; //Sql komutlarını kullanabilmek için gerekli olan kütüphanedir
+using System.Data.SqlClient; //Sql komutlarını kullanabilmek için gerekli olan kütüphanedir.
 
 namespace Personel_Kayit_Projesi
 {
