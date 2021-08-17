@@ -137,5 +137,11 @@ namespace Personel_Kayit_Projesi
             baglanti.Close();
             MessageBox.Show("Personel Bilgisi Güncellendi!"); 
         }
+
+        private void Btnİstatistik_Click(object sender, EventArgs e)
+        {
+            Frmistatistik fr = new Frmistatistik();
+            fr.Show();
+        }
     }
 }
