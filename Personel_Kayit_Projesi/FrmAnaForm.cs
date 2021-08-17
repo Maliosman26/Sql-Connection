@@ -11,9 +11,9 @@ using System.Data.SqlClient; //Sql komutlarını kullanabilmek için gerekli ola
 
 namespace Personel_Kayit_Projesi
 {
-    public partial class Form1 : Form
+    public partial class FrmAnaForm : Form
     {
-        public Form1()
+        public FrmAnaForm()
         {
             InitializeComponent();
         }
@@ -142,6 +142,12 @@ namespace Personel_Kayit_Projesi
         {
             Frmistatistik fr = new Frmistatistik();
             fr.Show();
+        }
+
+        private void BtnGrafikler_Click(object sender, EventArgs e)
+        {
+            FrmGrafikler frg = new FrmGrafikler();
+            frg.Show();
         }
     }
 }

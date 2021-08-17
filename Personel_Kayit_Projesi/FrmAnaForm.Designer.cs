@@ -1,7 +1,7 @@
 ﻿
 namespace Personel_Kayit_Projesi
 {
-    partial class Form1
+    partial class FrmAnaForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,7 @@ namespace Personel_Kayit_Projesi
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.MskMaas = new System.Windows.Forms.MaskedTextBox();
@@ -258,6 +258,7 @@ namespace Personel_Kayit_Projesi
             this.BtnGrafikler.TabIndex = 8;
             this.BtnGrafikler.Text = "Grafikler";
             this.BtnGrafikler.UseVisualStyleBackColor = true;
+            this.BtnGrafikler.Click += new System.EventHandler(this.BtnGrafikler_Click);
             // 
             // Btnİstatistik
             // 
@@ -444,7 +445,7 @@ namespace Personel_Kayit_Projesi
             this.label8.Text = "label8";
             this.label8.TextChanged += new System.EventHandler(this.label8_TextChanged);
             // 
-            // Form1
+            // FrmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -457,7 +458,7 @@ namespace Personel_Kayit_Projesi
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "Form1";
+            this.Name = "FrmAnaForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);

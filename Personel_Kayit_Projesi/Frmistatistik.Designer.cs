@@ -56,7 +56,7 @@ namespace Personel_Kayit_Projesi
             // 
             this.LblToplamPersonel.AutoSize = true;
             this.LblToplamPersonel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblToplamPersonel.Location = new System.Drawing.Point(364, 149);
+            this.LblToplamPersonel.Location = new System.Drawing.Point(380, 149);
             this.LblToplamPersonel.Name = "LblToplamPersonel";
             this.LblToplamPersonel.Size = new System.Drawing.Size(25, 29);
             this.LblToplamPersonel.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace Personel_Kayit_Projesi
             // 
             this.LblEvliPersonel.AutoSize = true;
             this.LblEvliPersonel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblEvliPersonel.Location = new System.Drawing.Point(364, 202);
+            this.LblEvliPersonel.Location = new System.Drawing.Point(380, 202);
             this.LblEvliPersonel.Name = "LblEvliPersonel";
             this.LblEvliPersonel.Size = new System.Drawing.Size(25, 29);
             this.LblEvliPersonel.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace Personel_Kayit_Projesi
             // 
             this.LblBekarPersonel.AutoSize = true;
             this.LblBekarPersonel.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblBekarPersonel.Location = new System.Drawing.Point(364, 248);
+            this.LblBekarPersonel.Location = new System.Drawing.Point(380, 248);
             this.LblBekarPersonel.Name = "LblBekarPersonel";
             this.LblBekarPersonel.Size = new System.Drawing.Size(25, 29);
             this.LblBekarPersonel.TabIndex = 5;
@@ -103,17 +103,17 @@ namespace Personel_Kayit_Projesi
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(228, 293);
+            this.label7.Location = new System.Drawing.Point(224, 293);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 29);
+            this.label7.Size = new System.Drawing.Size(134, 29);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Şehir Maaş:";
+            this.label7.Text = "Şehir Sayısı:";
             // 
             // LblSehirSayisi
             // 
             this.LblSehirSayisi.AutoSize = true;
             this.LblSehirSayisi.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblSehirSayisi.Location = new System.Drawing.Point(364, 293);
+            this.LblSehirSayisi.Location = new System.Drawing.Point(380, 293);
             this.LblSehirSayisi.Name = "LblSehirSayisi";
             this.LblSehirSayisi.Size = new System.Drawing.Size(25, 29);
             this.LblSehirSayisi.TabIndex = 7;
@@ -123,7 +123,7 @@ namespace Personel_Kayit_Projesi
             // 
             this.LblToplamMaas.AutoSize = true;
             this.LblToplamMaas.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblToplamMaas.Location = new System.Drawing.Point(364, 333);
+            this.LblToplamMaas.Location = new System.Drawing.Point(380, 333);
             this.LblToplamMaas.Name = "LblToplamMaas";
             this.LblToplamMaas.Size = new System.Drawing.Size(25, 29);
             this.LblToplamMaas.TabIndex = 9;
@@ -142,7 +142,7 @@ namespace Personel_Kayit_Projesi
             // 
             this.LblOrtalamaMaas.AutoSize = true;
             this.LblOrtalamaMaas.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblOrtalamaMaas.Location = new System.Drawing.Point(364, 375);
+            this.LblOrtalamaMaas.Location = new System.Drawing.Point(380, 375);
             this.LblOrtalamaMaas.Name = "LblOrtalamaMaas";
             this.LblOrtalamaMaas.Size = new System.Drawing.Size(25, 29);
             this.LblOrtalamaMaas.TabIndex = 11;
